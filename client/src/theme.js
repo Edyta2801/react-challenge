@@ -59,7 +59,7 @@ theme = createTheme(theme, {
   typography: {
     fontSize: 16,
     fontWeightLight: 300,
-    fontFamily:'Roboto',
+    fontFamily: 'Roboto',
     h1: {
       fontWeight: 700,
       lineHeight: 1.2,

@@ -1,5 +1,5 @@
 import { Box, Typography } from '@mui/material';
-import unknown_error from '../../../src/assets/unknown_error.png'
+import unknown_error from '../../../src/assets/unknown_error.png';
 
 export const Error = ({ error }) => {
   return (
@@ -30,7 +30,7 @@ export const Error = ({ error }) => {
               fontWeight: '700',
               mt: 1,
               lineHeigh: '76.8px',
-              marginBottom:'60px',
+              marginBottom: '40px',
             }}
           >
             Error
@@ -38,8 +38,8 @@ export const Error = ({ error }) => {
           <Box
             component="img"
             sx={{
-              height: 248,
-              width: 248,
+              height: 280,
+              width: 280,
             }}
             alt="Error."
             src={unknown_error}
@@ -47,7 +47,6 @@ export const Error = ({ error }) => {
 
           <Box
             sx={{
-              
               p: 0.5,
               borderRadius: '5px',
               color: 'rgba(51, 51, 51, 0.5)',
