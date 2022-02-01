@@ -2,6 +2,8 @@ import React from 'react';
 
 import { Button } from '../ui';
 import { Grid, Typography } from '@mui/material';
+import AddIcon from '@mui/icons-material/Add';
+import ArrowForwardIosIcon from '@mui/icons-material/ArrowForwardIos';
 
 // More on default export: https://storybook.js.org/docs/react/writing-stories/introduction#default-export
 export default {
@@ -39,6 +41,7 @@ export default {
 
 // More on component templates: https://storybook.js.org/docs/react/writing-stories/introduction#using-args
 const Template = ({ label, ...args }) => <Button {...args}>{label}</Button>;
+
 const All = () => (
   <>
     <Grid container>
@@ -58,6 +61,105 @@ const All = () => (
         Button
       </Button>
     </Grid>
+
+    <Grid container sx={{ mt: 5 }}>
+      <Grid item xs={12} sx={{ mb: 2 }}>
+        <Typography variant={'subheading'}>Contained Remove</Typography>
+      </Grid>
+      <Button
+        variant={'contained'}
+        color={'primary'}
+        endIcon={<ArrowForwardIosIcon sx={{ height: '12px' }} />}
+      >
+        Button
+      </Button>
+      <Button
+        variant={'contained'}
+        color={'error'}
+        endIcon={<ArrowForwardIosIcon sx={{ height: '12px' }} />}
+      >
+        Button
+      </Button>
+      <Button
+        variant={'contained'}
+        color={'success'}
+        endIcon={<ArrowForwardIosIcon sx={{ height: '12px' }} />}
+      >
+        Button
+      </Button>
+      <Button
+        variant={'contained'}
+        color={'warning'}
+        endIcon={<ArrowForwardIosIcon sx={{ height: '12px' }} />}
+      >
+        Button
+      </Button>
+    </Grid>
+
+    <Grid container sx={{ mt: 5 }}>
+      <Grid item xs={12} sx={{ mb: 2 }}>
+        <Typography variant={'subheading'}>Contained Add</Typography>
+      </Grid>
+      <Button
+        variant={'contained'}
+        color={'primary'}
+        startIcon={<AddIcon sx={{ height: '15px' }} />}
+      >
+        Button
+      </Button>
+      <Button
+        variant={'contained'}
+        color={'error'}
+        startIcon={<AddIcon sx={{ height: '15px' }} />}
+      >
+        Button
+      </Button>
+      <Button
+        variant={'contained'}
+        color={'success'}
+        startIcon={<AddIcon sx={{ height: '15px' }} />}
+      >
+        Button
+      </Button>
+      <Button
+        variant={'contained'}
+        color={'warning'}
+        startIcon={<AddIcon sx={{ height: '15px' }} />}
+      >
+        Button
+      </Button>
+    </Grid>
+
+    <Grid container sx={{ mt: 5 }}>
+      <Grid item xs={12} sx={{ mb: 2 }}>
+        <Typography variant={'subheading'}>Contained Remove icon</Typography>
+      </Grid>
+      <Button
+        className="iconButton"
+        variant={'contained'}
+        color={'primary'}
+        endIcon={<ArrowForwardIosIcon />}
+      ></Button>
+      <Button
+        className="iconButton"
+        variant={'contained'}
+        color={'error'}
+        endIcon={<ArrowForwardIosIcon />}
+      ></Button>
+      <Button
+        className="iconButton"
+        variant={'contained'}
+        color={'success'}
+        endIcon={<ArrowForwardIosIcon />}
+      ></Button>
+      <Button
+        className="iconButton"
+        variant={'contained'}
+        color={'warning'}
+        endIcon={<ArrowForwardIosIcon />}
+      ></Button>
+    </Grid>
+
     <Grid container sx={{ mt: 5 }}>
       <Grid item xs={12} sx={{ mb: 2 }}>
         <Typography variant={'subheading'}>Outlined</Typography>
@@ -74,6 +176,104 @@ const All = () => (
       <Button variant={'outlined'} color={'warning'}>
         Button
       </Button>
+    </Grid>
+
+    <Grid container sx={{ mt: 5 }}>
+      <Grid item xs={12} sx={{ mb: 2 }}>
+        <Typography variant={'subheading'}>Outlined Remove</Typography>
+      </Grid>
+      <Button
+        variant={'outlined'}
+        color={'primary'}
+        endIcon={<ArrowForwardIosIcon sx={{ height: '12px' }} />}
+      >
+        Button
+      </Button>
+      <Button
+        variant={'outlined'}
+        color={'error'}
+        endIcon={<ArrowForwardIosIcon sx={{ height: '12px' }} />}
+      >
+        Button
+      </Button>
+      <Button
+        variant={'outlined'}
+        color={'success'}
+        endIcon={<ArrowForwardIosIcon sx={{ height: '12px' }} />}
+      >
+        Button
+      </Button>
+      <Button
+        variant={'outlined'}
+        color={'warning'}
+        endIcon={<ArrowForwardIosIcon sx={{ height: '12px' }} />}
+      >
+        Button
+      </Button>
+    </Grid>
+
+    <Grid container sx={{ mt: 5 }}>
+      <Grid item xs={12} sx={{ mb: 2 }}>
+        <Typography variant={'subheading'}>Outlined Add</Typography>
+      </Grid>
+      <Button
+        variant={'outlined'}
+        color={'primary'}
+        startIcon={<AddIcon sx={{ height: '15px' }} />}
+      >
+        Button
+      </Button>
+      <Button
+        variant={'outlined'}
+        color={'error'}
+        startIcon={<AddIcon sx={{ height: '15px' }} />}
+      >
+        Button
+      </Button>
+      <Button
+        variant={'outlined'}
+        color={'success'}
+        startIcon={<AddIcon sx={{ height: '15px' }} />}
+      >
+        Button
+      </Button>
+      <Button
+        variant={'outlined'}
+        color={'warning'}
+        startIcon={<AddIcon sx={{ height: '15px' }} />}
+      >
+        Button
+      </Button>
+    </Grid>
+
+    <Grid container sx={{ mt: 5 }}>
+      <Grid item xs={12} sx={{ mb: 2 }}>
+        <Typography variant={'subheading'}>Outlined Remove icon</Typography>
+      </Grid>
+      <Button
+        className="iconButton"
+        variant={'outlined'}
+        color={'primary'}
+        endIcon={<ArrowForwardIosIcon />}
+      ></Button>
+      <Button
+        className="iconButton"
+        variant={'outlined'}
+        color={'error'}
+        endIcon={<ArrowForwardIosIcon />}
+      ></Button>
+      <Button
+        className="iconButton"
+        variant={'outlined'}
+        color={'success'}
+        endIcon={<ArrowForwardIosIcon />}
+      ></Button>
+      <Button
+        className="iconButton"
+        variant={'outlined'}
+        color={'warning'}
+        endIcon={<ArrowForwardIosIcon />}
+      ></Button>
     </Grid>
   </>
 );
